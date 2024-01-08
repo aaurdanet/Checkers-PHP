@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+
+html, body {
+  font-family: 'Raleway', sans-serif;
+  background-color: #222436;
+  color: #C7F447;
+}
+
+input[type="button"], .btn {
+  cursor: pointer;
+  font-family: Raleway;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  min-width: 400px;
+  padding: 1em;
+  text-align: center;
+}
+
+/* change the color of the letters */
+.checkers span {
+  display: inline-block;
+  max-width: 120px;
+  min-width: 1em;
+  padding: 2em;
+  margin: 0.1em;
+  background-color: #9e8fc8;
+  border: 1px #fff solid;
+  border-radius: 10px;
+  color: #fff;
+  font-weight: 700;
+  font-size: 18px;
+}
+*/
+
+.container .grid-3 {
+  width: 24.999%;
+}
+
+/* settings for entire table */
+.container tr td
+{
+    display: inline-block;
+    max-width: 100px;
+    min-width: 1em;
+    padding: 2em;
+    margin: 0.12em;
+    background-color: #FFFFFF;
+    border: 1px #222436 solid;
+    border-radius: 10px;
+    color: #000;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+/* checkered background 
+
+Write the CSS selector so each <td> should alternate colors 
+All <td>'s are currently white
+Add CSS selector to alternate black with white; copy the above CSS and modify so the background color is black
+
+Suggestion:
+The :nth-child selector allows you to select one or more elements based on their source order, according to a formula. It is defined in the CSS Selectors Level 3 spec as a “structural pseudo-class”, meaning it is used to style content based on its relationship with parent and sibling elements.
+*/
+/* .container tr td:nth-child(even)*/
+tr:nth-child(even) td:nth-child(odd), 
+tr:nth-child(odd) td:nth-child(even)
+{
+  display: inline-block;
+  max-width: 100px;
+  min-width: 1em;
+  padding: 2em;
+  margin: 0.12em;
+  background-color: #000;/*check*/
+  border: 1px #222436 solid;
+  border-radius: 10px;
+  color: #000;
+  font-weight: 700;
+  font-size: 18px;  
+}
+
+/* <td>'s without a checker
+Write the CSS class selector 'empty' to style the squares without a checker so all squares are the same size when viewed in a web browser.  Recommended style settings:
+*/
+.empty {
+display: inline-block;
+padding: 2em;
+margin: 0.12em;
+border: 1px #222436 solid;
+border-radius: 10px;
+height: 54px;
+width: 54px;
+}
+
+
+
+/* center the text for the <h1> with class 'title' */
+.title {
+  text-align: center;
+  color: #C7F447;
+}
+
+/* add a collapsed border for the <table> */
+table {
+  border: 1px #222436 solid;
+  border-collapse: collapse;
+}
+
+/* add a border for the <td> */
+td {
+  border: 3px #222436 solid;  
+}
