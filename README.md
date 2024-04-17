@@ -8,25 +8,19 @@ Introduction
 The Checkers static website is built using PHP and HTML to generate a checkers board with red and black pawns. It utilizes a constant SIZE to define the dimensions of the board and displays it as an HTML table. Red and black pawns are represented by images, creating a visual representation of a checkers game.
 Features
 
-    Dynamic Board Generation: The website dynamically generates a checkers board based on the constant SIZE, creating an 8x8 board.
+Dynamic Board Generation: The website dynamically generates a checkers board based on the constant SIZE, creating an 8x8 board.
 
-    Red and Black Pawns: The checkers board displays red and black pawn images representing the pieces on the board.
+Red and Black Pawns: The checkers board displays red and black pawn images representing the pieces on the board.
 
-    Responsive Design: The generated board is responsive and accessible across various devices.
+Responsive Design: The generated board is responsive and accessible across various devices.
 
 Usage
 
 To use this code with XAMPP:
 
-    Install XAMPP on your local machine.
+Install XAMPP on your local machine.
 
-    Clone this repository into the htdocs directory of your XAMPP installation:
-
-    bash
-
-git clone https://github.com/your-username/checkers.git C:\xampp\htdocs\checkers
-
-Start the Apache server using the XAMPP control panel.
+Clone this repository into the htdocs directory of your XAMPP installation
 
 Open your web browser and navigate to http://localhost/checkers.
 
